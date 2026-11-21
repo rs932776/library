@@ -1,0 +1,49 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Document Library</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fc;color:#172033;font-family:Arial,sans-serif}
+header{background:linear-gradient(120deg,#14285e,#3564ef);color:#fff;padding:25px 16px}
+main{max-width:1000px;margin:22px auto;padding:0 14px}.wrap{max-width:1000px;margin:auto}h1{margin:0 0 8px;font-size:25px}.muted{color:#65718a;font-size:13px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.tools input,.tools select{padding:12px;border:1px solid #dce3f0;border-radius:10px;background:white;font-size:15px;flex:1;min-width:150px}
+.folders{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 22px}.folder{border:1px solid #dce3f0;background:white;border-radius:20px;padding:10px 14px;cursor:pointer}.folder.active{background:#e8edff;border-color:#3564ef;color:#2348c4}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.doc{background:#fff;border:1px solid #e1e7f1;border-radius:14px;padding:14px;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:center}.icon{font-size:25px}.info b{display:block;font-size:14px;line-height:1.4}.info small{display:inline-block;margin-top:5px;color:#3454b5;background:#edf1ff;border-radius:15px;padding:4px 8px;font-size:11px}.actions{grid-column:1/-1;display:flex;gap:8px}.actions a{display:inline-block;text-decoration:none;padding:10px 13px;border-radius:9px;font-weight:bold;font-size:13px}.open{background:#315efb;color:white}.download{background:#edf1ff;color:#2348c4}.hint{background:white;border-radius:12px;padding:14px;margin:15px 0;color:#536078;font-size:13px;line-height:1.5}.empty{padding:25px;text-align:center;color:#68738a;background:white;border-radius:12px}
+</style></head><body><header><div class="wrap"><h1>📚 My Document Library</h1><div>Aapke sabhi PDF alag-alag subject folders mein.</div></div></header>
+<main><div class="hint">महत्वपूर्ण: इस वेबसाइट के साथ <b>documents</b> नाम का फोल्डर भी होना चाहिए। ZIP को Extract करें और index.html को उसी फोल्डर से खोलें।</div>
+<div class="tools"><input id="q" placeholder="Document search karein..."><select id="cat"><option value="All">All subjects</option><option>Communication Skills</option><option>Applied Chemistry</option><option>Mathematics-I</option><option>Technical Drawing</option></select></div>
+<div class="folders"><button class="folder active" data-folder="All">📚 All documents</button><button class="folder" data-folder="Communication Skills">📁 Communication</button><button class="folder" data-folder="Applied Chemistry">📁 Chemistry</button><button class="folder" data-folder="Mathematics-I">📁 Mathematics</button><button class="folder" data-folder="Technical Drawing">📁 Drawing</button></div>
+<div class="docs" id="docs"><article class="doc" data-cat="Communication Skills" data-search="daily life communication practice daily_life_communication_practice.pdf communication skills">
+      <div class="icon">📄</div><div class="info"><b>Daily Life Communication Practice</b><small>Communication Skills</small></div>
+      <div class="actions"><a class="open" href="./documents/Daily_Life_Communication_Practice.pdf">Open PDF</a><a class="download" href="./documents/Daily_Life_Communication_Practice.pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Applied Chemistry" data-search="applied chemistry exam notes (copy) bteup_first_semester_applied_chemistry_exam_notes-1.pdf applied chemistry">
+      <div class="icon">📄</div><div class="info"><b>Applied Chemistry Exam Notes (Copy)</b><small>Applied Chemistry</small></div>
+      <div class="actions"><a class="open" href="./documents/BTEUP_First_Semester_Applied_Chemistry_Exam_Notes-1.pdf">Open PDF</a><a class="download" href="./documents/BTEUP_First_Semester_Applied_Chemistry_Exam_Notes-1.pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Applied Chemistry" data-search="applied chemistry exam notes bteup_first_semester_applied_chemistry_exam_notes.pdf applied chemistry">
+      <div class="icon">📄</div><div class="info"><b>Applied Chemistry Exam Notes</b><small>Applied Chemistry</small></div>
+      <div class="actions"><a class="open" href="./documents/BTEUP_First_Semester_Applied_Chemistry_Exam_Notes.pdf">Open PDF</a><a class="download" href="./documents/BTEUP_First_Semester_Applied_Chemistry_Exam_Notes.pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Mathematics-I" data-search="applied mathematics-i 4101 (copy) applied mathematics-i 4101 (1).pdf mathematics-i">
+      <div class="icon">📄</div><div class="info"><b>Applied Mathematics-I 4101 (Copy)</b><small>Mathematics-I</small></div>
+      <div class="actions"><a class="open" href="./documents/APPLIED MATHEMATICS-I 4101 (1).pdf">Open PDF</a><a class="download" href="./documents/APPLIED MATHEMATICS-I 4101 (1).pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Mathematics-I" data-search="mathematics-i question paper (copy) mathematics - i (1).pdf mathematics-i">
+      <div class="icon">📄</div><div class="info"><b>Mathematics-I Question Paper (Copy)</b><small>Mathematics-I</small></div>
+      <div class="actions"><a class="open" href="./documents/MATHEMATICS - I (1).pdf">Open PDF</a><a class="download" href="./documents/MATHEMATICS - I (1).pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Technical Drawing" data-search="technical drawing question paper technical drawing (1).pdf technical drawing">
+      <div class="icon">📄</div><div class="info"><b>Technical Drawing Question Paper</b><small>Technical Drawing</small></div>
+      <div class="actions"><a class="open" href="./documents/TECHNICAL DRAWING (1).pdf">Open PDF</a><a class="download" href="./documents/TECHNICAL DRAWING (1).pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Applied Chemistry" data-search="applied chemistry question paper (copy) applied chemistry (1).pdf applied chemistry">
+      <div class="icon">📄</div><div class="info"><b>Applied Chemistry Question Paper (Copy)</b><small>Applied Chemistry</small></div>
+      <div class="actions"><a class="open" href="./documents/Applied Chemistry (1).pdf">Open PDF</a><a class="download" href="./documents/Applied Chemistry (1).pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Applied Chemistry" data-search="applied chemistry question paper applied chemistry.pdf applied chemistry">
+      <div class="icon">📄</div><div class="info"><b>Applied Chemistry Question Paper</b><small>Applied Chemistry</small></div>
+      <div class="actions"><a class="open" href="./documents/Applied Chemistry.pdf">Open PDF</a><a class="download" href="./documents/Applied Chemistry.pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Mathematics-I" data-search="applied mathematics-i 4101 applied mathematics-i 4101.pdf mathematics-i">
+      <div class="icon">📄</div><div class="info"><b>Applied Mathematics-I 4101</b><small>Mathematics-I</small></div>
+      <div class="actions"><a class="open" href="./documents/APPLIED MATHEMATICS-I 4101.pdf">Open PDF</a><a class="download" href="./documents/APPLIED MATHEMATICS-I 4101.pdf" download>Download</a></div>
+    </article><article class="doc" data-cat="Mathematics-I" data-search="mathematics-i question paper mathematics - i.pdf mathematics-i">
+      <div class="icon">📄</div><div class="info"><b>Mathematics-I Question Paper</b><small>Mathematics-I</small></div>
+      <div class="actions"><a class="open" href="./documents/MATHEMATICS - I.pdf">Open PDF</a><a class="download" href="./documents/MATHEMATICS - I.pdf" download>Download</a></div>
+    </article></div></main>
+<script>
+const q=document.getElementById('q'),cat=document.getElementById('cat'),docs=[...document.querySelectorAll('.doc')];let folder='All';
+function filter(){let n=0;docs.forEach(d=>{let ok=(folder==='All'||d.dataset.cat===folder)&&(cat.value==='All'||d.dataset.cat===cat.value)&&d.dataset.search.includes(q.value.toLowerCase());d.style.display=ok?'grid':'none';if(ok)n++});let e=document.getElementById('empty');if(!n&&!e){e=document.createElement('div');e.id='empty';e.className='empty';e.textContent='Koi document nahi mila.';document.getElementById('docs').append(e)}else if(n&&e)e.remove()}
+q.addEventListener('input',filter);cat.addEventListener('change',()=>{folder='All';document.querySelectorAll('.folder').forEach(b=>b.classList.toggle('active',b.dataset.folder==='All'));filter()});
+document.querySelectorAll('.folder').forEach(b=>b.addEventListener('click',()=>{folder=b.dataset.folder;cat.value='All';document.querySelectorAll('.folder').forEach(x=>x.classList.toggle('active',x===b));filter()}));
+</script></body></html>
